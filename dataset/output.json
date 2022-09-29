@@ -1,5 +1,5 @@
 {
-	"name": "movies_ds1",
+	"name": "output",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_BLOB_Training22",
@@ -10,27 +10,12 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "movies.csv",
-				"container": "input"
+				"container": "output"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
-			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": [
-			{
-				"name": "movieId",
-				"type": "String"
-			},
-			{
-				"name": "title",
-				"type": "String"
-			},
-			{
-				"name": "genres",
-				"type": "String"
-			}
-		]
+		"schema": []
 	}
 }
